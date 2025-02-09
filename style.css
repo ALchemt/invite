@@ -117,10 +117,9 @@ body {
 }
 
 @keyframes glow {
-  from { box-shadow: none; }
-  to { box-shadow: inset -10px -10px -15px rgba(255,255,255,0.7), 
-       inset -20px -20px -30px rgba(0,0,0,0.2),
-       inset -30px -30px -40px rgba(255,255,255,0.3); }
+ from{box-shadow:none;}
+ to{box-shadow:-10rem-15rem5rem white,
+      inset-.8rem-.6rem5rem white;}
 }
 
 .glow:hover {
