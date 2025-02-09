@@ -45,6 +45,7 @@ body {
   to { opacity:1; }
 }
 
+
 .stars {
   position: absolute;
   top: -100px;
@@ -88,3 +89,41 @@ body {
   z-index:-10000;     
   box-shadow :0 -15px -35 rgba(255 ,255 ,255 ,.6);       
 }  
+
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#yes-btn {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+#no-btn {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.glow {
+  animation: glow ease-out infinite;
+}
+
+@keyframes glow {
+  from { box-shadow: none; }
+  to { box-shadow: inset -10px -10px -15px rgba(255,255,255,0.7), 
+       inset -20px -20px -30px rgba(0,0,0,0.2),
+       inset -30px -30px -40px rgba(255,255,255,0.3); }
+}
+
+.glow:hover {
+ animation-direction:normal ;
+ box-shadow :inset -50px -50px-60-70 rgba(245 ,244 ,240 ,.3);
+}
