@@ -6,10 +6,6 @@
   text-align: center;
 }
 
-.button-container {
-  margin-top: 20px;
-}
-
 @keyframes fadeOut {
   from { opacity:1; }
   to { opacity:0; }
@@ -98,17 +94,29 @@ body {
 .button-container button {
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  background-color: transparent; /* Make the background transparent */
+  border-radius: 5px; /* Add rounded corners */
   cursor: pointer;
 }
 
+.button-container button:hover {
+  box-shadow: inset -10px -10px -15px rgba(255,255,255,0.7), 
+       inset -20px -20px -30px rgba(0,0,0,0.2),
+       inset -30px -30px -40px rgba(255,255,255,0.3); /* Add a glow effect on hover */
+}
+
+/* Add a white border to the buttons */
+.button-container button {
+  border: 2px solid #fff; /* Change #fff to any other color you want for the border */
+}
+
 #yes-btn {
-  background-color: #4CAF50;
+  background-color: #2b2b2b;
   color: #fff;
 }
 
 #no-btn {
-  background-color: #f44336;
+  background-color: #2b2b2b;
   color: #fff;
 }
 
