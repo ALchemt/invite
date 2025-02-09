@@ -13,6 +13,7 @@
 @keyframes fadeOut {
   from { opacity:1; }
   to { opacity:0; }
+}
 
 .animate {
   animation: fadeIn .5s forwards;
