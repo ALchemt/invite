@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Вика <3</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+  <title>Приглашение</title>
 </head>
-    
 <body>
+  <div id="stars"></div>
   <div class="container">
-    <p id="initial-text">Надеюсь тебе понравился букет, поэтому преглашаю тебя на свидание, в очень неожиданное и красивое место). Согласна?</p>
-    <div class="button-container">
-      <button id="yes-btn">Да</button>
-      <button id="no-btn">Нет</button>
-    </div>
-    <p id="new-text" style="display:none;">Отлично, все потробности обсудим в тг @ALchemt</p>
+    <h1 class="glow-text">Привет, Вика!</h1>
+    <div class="message glow-text">Надеюсь тебе понравился букет, поэтому приглашаю тебя на свидание, в очень неожиданное и красивое место). Согласна?</div>
+    <button class="btn btn-accept glow-button" onclick="showSuccess()">Согласиться</button>
+    <button class="btn btn-decline glow-button" onmouseover="escape(this)">Отказаться</button>
   </div>
-
-<div class="stars">
- <div class="star"></div>    
- <div class="star"></div>    
- <div class="star"></div>    
- <div class="star"></div>    
-</div>
-
-  <script src="script.js"></script>
+  <div class="success-message" id="successMessage">
+    <h2 class="glow-text">Отличный выбор!</h2>
+    <p class="glow-text">Напиши мне, обсудим детали</p>
+    <a href="https://t.me/ALchemt" class="glow-link">@ALchemt</a>
+  </div>
+  <script src="./script.js"></script>
 </body>
 </html>
